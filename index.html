@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India's Leading Online Food Catering Site | MyOnlineMeals.com</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" media="screen and (max-width: 972px) " href="phone.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Bree+Serif&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="img/logo1.png" alt="MyOnlineMeals.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#client-container">Our Clients</a></li>
+            <li class="item"><a href="#contact-container">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="home" class="center">
+        <div class="home1">
+            <h1 class="heading1">Welcome to MyOnlineMeal.com</h1>
+            <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, odio similique?
+                Asperiores id
+                eum
+                tenetur!</p>
+            <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quas mollitia</p>
+           <a href="order_now.html"><button class="btn" >Order Now</button></a> 
+        </div>
+    </section>
+    <section id="services-container">
+        <h1 class="heading1">Our Services</h1>
+        <div id="services">
+            <div class="box center" id="box1">
+                <h2 class="heading2">Food Catering</h2>
+                <img src="img/pizza1.png" alt="error loading..">
+                <p class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tenetur quaerat, fugit voluptas quibusdam velit accusamus dolor voluptatibus
+                    assumenda atque esse qui deserunt iusto tempora deleniti blanditiis odit laboriosam!
+                </p>
+            </div>
+            <div class="box center" id="box2">
+                <h2 class="heading2">Bulk Ordering</h2>
+                <img src="img/cater1.png" alt="error loading..">
+                <p class="para2" class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tenetur quaerat, fugit voluptas quibusdam velit accusamus dolor voluptatibus
+                    assumenda atque esse qui deserunt iusto tempora deleniti blanditiis odit laboriosam!
+                </p>
+            </div>
+            <div class="box center" id="box3">
+                <h2 class="heading2">Food Ordering</h2>
+                <img src="img/delivery1.png" alt="error loading..">
+                <p class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tenetur quaerat, fugit voluptas quibusdam velit accusamus dolor voluptatibus
+                    assumenda atque esse qui deserunt iusto tempora deleniti blanditiis odit laboriosam!
+                </p>
+            </div>
+
+        </div>
+    </section>
+    <section id="client-container" class="center">
+        <h1 class="heading1">Our Clients</h1>
+        <div id="client-item">
+            <div class="client">
+                <img src="img/alogo.png" alt="client1">
+            </div>
+            <div class="client">
+                <img src="img/logo2.png" alt="client2">
+            </div>
+            <div class="client">
+                <img src="img/logo3.png" alt="client3">
+            </div>
+            <div class="client">
+                <img src="img/logo4.png" alt="client4">
+            </div>
+
+        </div>
+    </section>
+    <section id="contact-container">
+        <h1 class="heading1 center">Contact Us</h1>
+        <!-- <p>Call Us On:  8574968523</p> -->
+        <div id="contact-box">
+            
+            <form action="#">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone No: </label>
+                    <input type="number" name="name" id="phone" placeholder="Enter Your Phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="10" rows="10"></textarea>
+                </div>
+                <div class="form-group" id="submit">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+
+            <div id="social">
+                <div class="social_sites" id="fb">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" alt="facebook"></a>
+                </div>
+                <div class="social_sites" id="insta">
+                    <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" alt="instagram"></a>
+                </div>
+                <div class="social_sites" id="twitter">
+                    <a href="https://twitter.com/" target="_blank"><img src="img/twitter.png" alt="client3"></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer >
+        <div class="center">
+            Copyright &copy; www.MyOnlineMeals.com. All rights reserved!
+        </div>
+    </footer>
+    <script>
+            var s=document.getElementById("submit");
+            var user_name=document.getElementById("name");
+            var mail=document.getElementById("email");
+            var mobile=document.getElementById("phone");
+            var msg=document.getElementById("message");
+           // var empt = document.forms["message"].value;
+// if (empt == "")
+// {
+// alert("Please input a Value");
+// return false;
+// }
+            s.addEventListener("click",function(){
+                if(!user_name)
+                {
+                    alert("Name can't be Empty!");
+                    return false;
+                }
+                else if(!mail)
+                {
+                    alert("Email can't be Empty!");
+                    return false;
+                }
+                else if(!mobile)
+                {
+                    alert("Phone no. can't be Empty!");
+                    return false;
+                }
+                else if(msg.value=="")
+                {
+                    alert("Massage can't be Empty!");
+                    return false;
+                }  
+                else
+                    alert("Thanks For Your Feedback");
+
+               
+            })
+     
+    </script>
+
+</body>
+
+</html>
