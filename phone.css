@@ -1,0 +1,117 @@
+.heading1{
+    font-size: 25px;
+    padding: 12px;
+}
+/* navigation bar */
+#navbar{
+    flex-direction: column;
+}
+#logo img {
+    height: 55px;
+    /* padding: 30px; */
+    margin: 0px 10px;
+}
+#navbar ul{
+    margin: 0px 0px;
+}
+#navbar li {
+    margin: 0px 10px;
+}
+#navbar li a {
+    font-size: 14px;
+    padding: 1px 6px;
+}
+
+/* home section */
+#home{
+    height: 280px;
+}
+#home ::before{
+    height: 70%;
+}
+.home1{
+    padding: 0px 0px;
+}
+.btn{
+    font-size: 14px;
+    padding: 1px 10px;
+    margin: 5px;
+}
+/* services section */
+#services-container h1{
+    width: 55%;
+}
+#services{
+    flex-direction: column;
+}
+.box{
+    margin: 0px 0px;
+    padding: 2px;
+}
+
+/* client section */
+
+#client-container{
+    overflow: hidden;
+}
+#client-container::before {
+    
+    padding: 0px 0px;
+
+}
+#client-item{
+    flex-wrap: wrap;
+}
+.client {
+    padding: 2px 20px;
+    margin: 3px 7px;
+}
+.client img {
+    height: 67px;
+    width: 83px;
+}
+
+/* contact section */
+#contact-container form {
+    width: 56%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.form-group {
+    
+    width:86%;
+}
+#social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 44px;
+    /* position: inherit; */
+    /* right: 3px; */
+    justify-content: center;
+    width: 40%;
+    height: 154px;
+}
+.social_sites img {
+    height: 35px;
+    margin: 41px 10px;
+}
+.form-group label {
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    font-size: 12px;
+}
+.form-group input, .form-group textarea {
+    width: 86%;
+    font-size: 10px;
+}
+/* footer */
+footer {
+    padding: 9px 20px;
+    height: 35px;
+}
+footer div {
+    margin: 5px;
+    font-size: 11px;
+}
